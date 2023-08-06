@@ -1,0 +1,18 @@
+=====Automatización de la página web demoblaze 
+     - La automatización de la compra de dispositivos móviles se realizo en un solo escenario
+       con Gherkin  y la data se encuentra en un archivo .csv
+     - Se utilizo el driver de chrome 
+     - El escenario de prueba corre de manera exitosa
+     - Los reportes se generan en un archivo .html y se visualiza en el navegador
+ 
+=====Automatización del Api demoblaze 
+  - El Requesr del servicio se encuetran en un archivo .json y la data en un archivo csv
+  - El servicio de crear usuario no devuelve un mensaje exitoso, sino un valor vacio, en 
+    ese escenario solo se valida  el codigo http 200 
+  - los demás escenario se valida con la respuesta del servicio y el codigo http 200 
+  - Los 5 escenario corren de manera exitosa
+  - Los reportes se generan en un archivo .html y se visualiza en el navegador
+  - se crearon funciones para la optimización de código
+
+
+  

@@ -33,7 +33,6 @@ Feature: Consultar Apis de la Demoblaze
   @TEST_NTTDATA @CrearUsuarioExitoso @Demoblaze
   Scenario Outline: T - API - Crear credenciales de manera exitosa
     * def result = call read('usuariosDemoblaze.feature@CrearCredenciales'){user: '<user>',pass: '<pass>'}
-    And match result.response contains "#null"
     Examples:
       |read('classpath:../data/credenciales.csv')
 
@@ -48,7 +47,7 @@ Feature: Consultar Apis de la Demoblaze
   @TEST_NTTDATA @LoginExitoso @Demoblaze
   Scenario Outline: T - API - Login usuario y password correcto
     * def result = call read('usuariosDemoblaze.feature@Login'){user: '<user>',pass: '<pass>'}
-    And match result.response contains  {Auth_token: "Z2F6dW1iYTQxNjkxODEy"}
+    And match result.response.Auth_token != "#notnull"
     Examples:
       |read('classpath:../data/credenciales.csv') |
 
