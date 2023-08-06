@@ -1,0 +1,1 @@
+gradle clean test "-Dkarate.options=--tags  @CarritoCompraSet" "-Dkarate.env=test" --warning-mode all
